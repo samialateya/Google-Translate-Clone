@@ -1,0 +1,38 @@
+$gray:#eee;
+$dark-gray:#bbb;
+$primary: #0d6efd;
+.body{
+	overflow: hidden;
+}
+.navbar{
+	border-bottom: 1px solid $gray;
+}
+
+.cp{
+	cursor: pointer;
+}
+
+.translate-container{
+	border-radius: 10px;
+	box-shadow: 0px 0px 4px 0px $dark-gray
+}
+
+.translate-box{
+	height: 50px;
+	border-bottom: 1px solid $gray;
+}
+
+.selected-lang{
+	border-bottom: 3px solid $primary;
+	font-weight: bold;
+}
+
+.border-right{
+	border-right: 1px solid $gray;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none !important;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- default char set -->
+	<meta charset="UTF-8">
+	<!-- compatible with edge browser -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- controle viweport to view response pages -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- page title -->
+	<title>Translator</title>
+	<!-- required css style sheets -->
+	<link rel="stylesheet" href="./css/libs/all.min.css" />
+	<link rel="stylesheet" href="./css/libs/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="bg-light">
+	<!-- navbar -->
+	<nav class="navbar navbar-light bg-body py-3">
+		<div class="container-fluid">
+			<!-- logo -->
+			<a class="navbar-brand text-muted c-p"><b>Google Translator Clone</b></a>
+		</div>
+	</nav>
+	<!-- #navbar -->
+	<!-- container -->
+	<div class="row justify-content-center p-0 mt-5">
+		<!-- transaltor container -->
+		<div class="bg-body col-10 row p-0 col-sm-11 col-md-10 translate-container">
+			<!-- original text area -->
+			<div class="col-sm-12 col-md-6 p-0">
+				<!-- header -->
+				<div class="translate-box">
+					<ul class="nav h-100">
+						<li class="nav-item h-100 selected-lang text-uppercase">
+							<a class="nav-link active" aria-current="page" href="#">English</a>
+						</li>
+					</ul>
+				</div>
+				<!-- #header -->
+				<!-- body -->
+				<div class="d-flex flex-column justify-content-between py-2 border-right">
+					<!-- text area -->
+					<div>
+						<textarea class="px-2 w-100 border-0" id="original-text" placeholder="Type To Translate"></textarea>
+					</div>
+					<!-- #text area -->
+					<!-- bottom buttons -->
+					<div class="px-3 d-flex justify-content-between">
+						<button class="btn text-primary" id="translate-btn"><i class="fa fa-glasses"></i></button>
+						<button class="btn" id="read-btn"><i class="fa fa-microphone text-primary"></i></button>
+					</div>
+					<!-- #bottom buttons -->
+				</div>
+				<!-- #body -->
+			</div>
+			<!-- #original text area -->
+			<!-- translated text area -->
+			<div class="col-sm-12 col-md-6 p-0">
+				<!-- header -->
+				<div class="translate-box">
+					<ul class="nav h-100">
+						<li class="nav-item h-100 selected-lang text-uppercase">
+							<a class="nav-link active" aria-current="page" href="#">Spanish</a>
+						</li>
+					</ul>
+				</div>
+				<!-- #header -->
+				<!-- body -->
+				<div class="d-flex flex-column justify-content-between py-2 border-right">
+					<!-- translated text -->
+					<div>
+						<textarea class="px-2 w-100 border-0" id="translated-text" disabled></textarea>
+					</div>
+					<!-- #translated text -->
+					<!-- read button -->
+					<div class="px-3 d-flex justify-content-end">
+						<button class="btn" id="read-trans-btn"><i class="fa fa-microphone text-primary"></i></button>
+					</div>
+					<!-- #read button -->
+				</div>
+				<!-- #body -->
+			</div>
+			<!-- #translated text area -->
+		</div>
+		<!-- #transaltor container -->
+	</div>
+	<!-- container -->
+	<!-- main js file that load other js files as modules -->
+	<script src="./js/app.js" defer type="module"></script>
+</body>
+</html>

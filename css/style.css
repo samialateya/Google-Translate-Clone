@@ -1,0 +1,38 @@
+.body {
+  overflow: hidden;
+}
+
+.navbar {
+  border-bottom: 1px solid #eee;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+.translate-container {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 4px 0px #bbb;
+          box-shadow: 0px 0px 4px 0px #bbb;
+}
+
+.translate-box {
+  height: 50px;
+  border-bottom: 1px solid #eee;
+}
+
+.selected-lang {
+  border-bottom: 3px solid #0d6efd;
+  font-weight: bold;
+}
+
+.border-right {
+  border-right: 1px solid #eee;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+}
+/*# sourceMappingURL=style.css.map */
